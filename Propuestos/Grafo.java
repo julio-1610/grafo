@@ -10,7 +10,7 @@ public class Grafo {
             this.rel = new HashMap<>();
         } 
         
-        public void put(Node n, Integer value) {
+        public void put(Node n, int value) {
             rel.put(n, value);
         }
         
@@ -36,6 +36,10 @@ public class Grafo {
             vertices[i] = new Node(i + 1);
     }
     
+    public void put(int node, int edge, int value) {
+        vertices[node - 1].put(vertices[edge - 1], value);
+    }
+    
     @Override
     public String toString() {
         String str = "";
@@ -44,3 +48,4 @@ public class Grafo {
         return str;
     }
 }
+
