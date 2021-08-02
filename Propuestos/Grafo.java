@@ -14,10 +14,6 @@ public class Grafo {
             rel.put(n, value);
         }
         
-        public int get(Node n) {
-            return rel.get(n);
-        }
-        
         @Override
         public String toString() {
             String str = name + " =>";
