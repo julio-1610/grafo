@@ -37,7 +37,10 @@ public class Grafo {
     }
     
     public void put(int node, int edge, int value) {
-        vertices[node - 1].put(vertices[edge - 1], value);
+        if (!vertices[node - 1].rel.containsKey(vertices[edge - 1])) {
+            vertices[node - 1].put(vertices[edge - 1], value);
+            vertices[edge - 1].put(vertices[node - 1], value);
+        }
     }
     
     @Override
