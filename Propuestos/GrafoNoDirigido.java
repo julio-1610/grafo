@@ -1,5 +1,5 @@
 import java.util.*;
-public class Grafo {
+public class GrafoNoDirigido {
     
     class Node {
         protected int name;
