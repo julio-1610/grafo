@@ -26,7 +26,7 @@ public class GrafoNoDirigido {
     
     private Node[] vertices;
     
-    public Grafo(int cant) {
+    public GrafoNoDirigido(int cant) {
         this.vertices = new Node[cant];
         for (int i = 0; i < cant; i++) 
             vertices[i] = new Node(i + 1);

@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        Grafo g = new Grafo(7);
+        GrafoNoDirigido g = new GrafoNoDirigido(7);
         g.put(1, 3, 1);
         g.put(1, 2, 8);
         g.put(2, 3, 5);
